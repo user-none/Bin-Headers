@@ -56,6 +56,8 @@ def main(args):
     except Exception as e:
         print('Failed to read \'%s\': %s' % (infile, e))
         return 3
+    indata = indata.decode()
+
 
     # Prepare the file
     # Remove all newlines from the file so we can match as if it was one string
